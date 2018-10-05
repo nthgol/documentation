@@ -102,6 +102,6 @@
  var DOMAIN = 'YOUR_DOMAIN_NAME';
  var mailgun = require('mailgun-js')({ apiKey: "YOUR_API_KEY", domain: DOMAIN });
 
- mailgun.put(`/domain/${DOMAIN}/webhooks/clicked`, {"url": 'https://your_domain.com/v1/clicked'}, function (error, body) {
+ mailgun.put(`/domains/${DOMAIN}/webhooks/clicked`, {"url": 'https://your_domain.com/v1/clicked'}, function (error, body) {
    console.log(body);
  });
